@@ -17,13 +17,13 @@ def get_contestant_name(data, occupation)
   work = []
 data.each {|seasons, array|
   array.each{|hash|
-    hash.each{|contestant, tidbits|
+    
    
-        if contestant["occupation"] == occupation
-          work = contestant["name"]
+        if hash.values_at("occupation") == occupation
+          work = hash.values_at("name")
         end 
       
-    }
+   
   }
 }
 work

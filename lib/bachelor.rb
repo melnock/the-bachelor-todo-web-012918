@@ -55,7 +55,7 @@ data.each {|seasons, array|
   if seasons == season
   array.each {|hash|
       
-        age << hash.values_at("age")
+        age << hash.["age"]
       
     }
   end

@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
  winner = []
 data[season].each {|array|
   array.each{|hash, contestant|
-    contestant.each{|tidbit, data|
+    hash.each{|contestant, tidbits|
       winner = tidbits[:status]
         
       

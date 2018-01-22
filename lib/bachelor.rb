@@ -1,9 +1,23 @@
 def get_first_name_of_season_winner(data, season)
-  # code here
+ winner = []
+data[season].each {|array|
+  array.each{|hash, contestant|
+    contestant.each{|tidbit, data|
+      winner = tidbits[:status]
+        
+      
+    }
+    
+  }
+
+}
+ winner[0]
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  work = []
+data.each {|seasons, hash|}
+
 end
 
 def count_contestants_by_hometown(data, hometown)

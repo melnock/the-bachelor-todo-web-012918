@@ -46,7 +46,7 @@ data.each {|seasons, array|
         end 
     }
 }
-home[0]
+home[0][0]
 end
 
 def get_average_age_for_season(data, season)

@@ -19,8 +19,8 @@ data.each {|seasons, array|
   array.each{|hash|
     hash.each{|contestant, tidbits|
    
-        if tidbits["occupation"] == occupation
-          work = contestant
+        if contestant["occupation"] == occupation
+          work = contestant["name"]
         end 
       
     }

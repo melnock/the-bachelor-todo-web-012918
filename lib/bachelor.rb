@@ -4,8 +4,8 @@ data[season].each {|array|
   array.each{|hash, contestant|
     hash.each{|contestant, tidbits|
       if tidbits[:status] == "Winner"
-        
-      
+        winner = contestant
+      end 
     }
     
   }

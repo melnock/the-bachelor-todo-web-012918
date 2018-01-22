@@ -38,7 +38,15 @@ home.length
 end
 
 def get_occupation(data, hometown)
-  # code here
+  home = []
+data.each {|seasons, array|
+  array.each{|hash|
+        if hash["hometown"] == hometown
+          home << hash.values_at("occupation")
+        end 
+    }
+}
+work[0]
 end
 
 def get_average_age_for_season(data, season)

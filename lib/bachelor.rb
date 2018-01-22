@@ -17,7 +17,7 @@ def get_contestant_name(data, occupation)
   work = ""
 data.each {|seasons, array|
   array.each{|hash|
-        if hash.values_at("occupation") == occupation
+        if hash["occupation"] == occupation
           work = hash.values_at("name")
         end 
     }

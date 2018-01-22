@@ -14,7 +14,7 @@ data[season].each {|array|
 end
 
 def get_contestant_name(data, occupation)
-  work = []
+  work = ""
 data.each {|seasons, array|
   array.each{|hash|
     

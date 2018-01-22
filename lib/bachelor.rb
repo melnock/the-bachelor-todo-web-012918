@@ -26,7 +26,15 @@ work[0]
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  home = []
+data.each {|seasons, array|
+  array.each{|hash|
+        if hash["hometown"] == hometown
+          home << hash.values_at("name")
+        end 
+    }
+}
+home.length
 end
 
 def get_occupation(data, hometown)

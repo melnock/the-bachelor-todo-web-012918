@@ -3,14 +3,14 @@ def get_first_name_of_season_winner(data, season)
 data[season].each {|array|
   array.each{|hash, tidbits|
       if tidbits["status"] == "Winner"
-        winner = tidbits.values_at("name")
+        winner << tidbits["name"]
       end 
     }
     
   }
 
 
- winner[0].split
+ winner[0]
 end
 
 def get_contestant_name(data, occupation)

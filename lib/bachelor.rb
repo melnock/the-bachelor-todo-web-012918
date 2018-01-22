@@ -27,7 +27,7 @@ data.each {|seasons, array|
     }
   }
 }
-
+work[0]
 end
 
 def count_contestants_by_hometown(data, hometown)

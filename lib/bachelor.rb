@@ -4,7 +4,7 @@ data.each {|seasons, array|
   if seasons == season
   array.each {|hash|
       if hash["status"] == "Winner"
-        winner << hash.values_at("name").split
+        winner << hash.values_at("name")
       end 
     }
   end

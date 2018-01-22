@@ -10,7 +10,7 @@ data[season].each {|array|
   }
 
 
- winner[0][0]
+ winner[0]
 end
 
 def get_contestant_name(data, occupation)

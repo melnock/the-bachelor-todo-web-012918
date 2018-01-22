@@ -50,5 +50,14 @@ home[0][0]
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+   age = []
+data.each {|seasons, array|
+  if seasons == season
+  array.each {|hash|
+      
+        age << hash.values_at("age")
+      
+    }
+  end
+  }
 end

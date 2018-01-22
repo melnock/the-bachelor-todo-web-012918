@@ -4,14 +4,14 @@ data[season].each {|array|
   array.each{|hash, contestant|
     hash.each{|contestant, tidbits|
       if tidbits[:status] == "Winner"
-        winner = contestant
+        winner = contestant.split
       end 
     }
     
   }
 
 }
- winner[0]
+ winner[0][0]
 end
 
 def get_contestant_name(data, occupation)
